@@ -1,0 +1,11 @@
+# @package _global_
+
+wandb:
+  mode: disabled
+slurm:
+  cluster: debug
+  num_parallel: 1 # does not matter anyways?
+  update_parameters: # for executor.update_parameters()
+    timeout_min: 1000
+    slurm_partition: dev
+    gpus_per_node: 1
